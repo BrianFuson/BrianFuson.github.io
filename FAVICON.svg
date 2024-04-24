@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="300" height="300" version="1.1" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: blue;
+        font-family: Oaky-Regular, Oaky;
+        font-size: 234px;
+      }
+
+      .cls-2 {
+        fill: #f0f0f0;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="300" height="300"/>
+  <text class="cls-1" transform="translate(29.8 229.2)"><tspan x="0" y="0">BF</tspan></text>
+</svg>
