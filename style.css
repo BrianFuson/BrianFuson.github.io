@@ -1,6 +1,6 @@
 @font-face{
     font-family: myFont;
-    src:url(Oaky-Regular.woff);
+    src:url(Bookwell-Bold.woff);
 }
 
 body{
@@ -82,7 +82,7 @@ p{
     max-width: 65ch;
     margin: 0 auto;
     font-size: 17px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
 }
 
