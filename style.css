@@ -1,6 +1,8 @@
 @font-face{
     font-family: myFont;
     src:url(Bookwell-Bold.woff);
+    font-style: normal;
+    font-weight: bold;  
 }
 
 body{
