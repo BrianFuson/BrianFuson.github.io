@@ -194,6 +194,7 @@ footer {
     left: 40px;
     width: 300px;
     line-height: 67px;
+    text-align: center;
 
     font-size: 75px;
     font-family: myFont, Georgia, 'Times New Roman', Times, serif;
