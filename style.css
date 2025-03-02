@@ -233,9 +233,9 @@ a {
 footer {
     text-align: center;
     position: sticky;
-    background-color: back;
+    background-color: blue;
     color: rgb(240,240,240);
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     padding-top: 20px;
     margin-top: 0px;
     overflow: hidden;
