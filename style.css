@@ -233,7 +233,7 @@ a {
 footer {
     text-align: center;
     position: sticky;
-    background-color: blue;
+    background-color: back;
     color: rgb(240,240,240);
     padding-bottom: 20px;
     padding-top: 20px;
