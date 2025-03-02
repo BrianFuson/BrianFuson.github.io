@@ -1,22 +1,38 @@
 @font-face{
     font-family: myFont;
-    src:url(Bookwell-Bold.woff);
+    src:url(BookwellD27-Bold.woff);
     font-style: normal;
     font-weight: bold;  
+}
+
+@font-face{
+  font-family: myFontBook;
+  src:url(BookwellD27-Book.woff);
+  font-style: normal;
+  font-weight: normal;  
+}
+
+@font-face{
+  font-family: myFontMedium;
+  src:url(BookwellD27-Medium.woff);
+  font-style: normal;
+  font-weight: medium;  
 }
 
 body{
     margin: 0px;
     background-color: rgb(240,240,240);
+    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
 }
 
 main{
-    margin: 20px;
+    margin: 0px;
 }
 
 h1{
-    color: black;
-    background-color:  rgb(240,240,240);
+    color: rgb(240,240,240);
+    background-color: black;
     font-family: myFont, Georgia, 'Times New Roman', Times, serif;
     font-size: 70px;
     text-align: center;
@@ -25,18 +41,21 @@ h1{
 }
 
 h1:hover{
-  color: blue;
+  color: rgb(240,240,240);
+  background-color: black;
 }
 
 h2{
+  text-decoration: none;
   text-align: center;
   color: black;
   font-family: myFont, Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
-  padding: 0px;
-  margin: 25px;
-  line-height: 0px;   
+  padding-top: 10px;
+  margin: 30px;
+  line-height: 0px;
 }
+
 
 hr{
   margin-top: 0px;
@@ -57,14 +76,15 @@ hr{
     color: rgb(240,240,240);
     text-decoration: none;
     font-size: 18px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    padding: 12px 30px;
+    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 30px;
     display: block;
 }
 
 .navbar a:hover{
     background-color:blue;
     color: rgb(240,240,240);
+    transition: background-color .15s ease;
 }
 
 .navbar li{
@@ -79,8 +99,8 @@ hr{
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color: blue;
-  color: rgb(240,240,240);
+  background-color: rgb(240,240,240);
+  color: black;
 }
 
 h3{
@@ -94,25 +114,60 @@ h3{
 }
 
 p{
-    text-align: center;
-    padding: 10;
-    max-width: 65ch;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 80ch;
     margin: 0 auto;
-    font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-  .column {
+.img {
+  display: block;
+}
+
+
+.column {
+    opacity: 1;
     float: left;
     width: 50%;
     padding: 0px;
+    background-color: blue; /* Set background color */
+  }
+  
+.column img {
+    opacity: 1; /* Lower the opacity of just the image */
+    transition: opacity 0.2s ease;
+    display: block;
+  }
+  
+.column a:hover img {
+    opacity: .10; /* Restore full opacity on hover */
+    background-color: blue;
   }
 
+  .column video {
+    opacity: 1; /* Lower the opacity of just the image */
+    transition: none;
+    display: block;
+  }
+
+  .column a:hover video{
+    opacity: .10; /* Restore full opacity on hover */
+    background-color: blue;
+  }
   
   /* Clear floats after image containers */
   .row::after {
@@ -125,8 +180,12 @@ a {
     float: left;
     width: 33.3%;
     padding: 0px;
+    display: block;
   }
 
+  .column2 img {
+    display: block;
+  }
   
   /* Clear floats after image containers */
   .row2::after {
@@ -148,10 +207,6 @@ a {
     margin-right: auto;
   }
 
-  .column a:hover{
-    opacity: 30%;
-  }
-
   .center3 {
     display: block;
     margin-left: auto;
@@ -160,12 +215,12 @@ a {
 
 .button {
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
     border: none;
-    font-size: 16px;
-    padding: 10px 25px;
+    font-size: 18px;
+    padding: 15px 25px;
     color: rgb(240,240,240);
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
     margin:15px auto;
@@ -182,7 +237,7 @@ footer {
     color: rgb(240,240,240);
     padding-bottom: 20px;
     padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     overflow: hidden;
   }
 
@@ -213,7 +268,7 @@ footer {
 
     font-size: 75px;
     font-family: myFont, Georgia, 'Times New Roman', Times, serif;
-    color: blue;
+    color: rgb(240,240,240);
   }
 
   
