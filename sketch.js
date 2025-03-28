@@ -81,8 +81,8 @@ function resetSketch() {
     var star = {
       x: random(bw) + bx,
       y: random(bh) + by,
-      r1: random(15, 30),
-      r2: random(50, 70),
+      r1: random(15, 20),
+      r2: random(50, 60),
       n: 5,
     };
 
@@ -112,11 +112,13 @@ function resetSketch() {
     Star(
       stars[i].x,
       stars[i].y,
-      stars[i].r1 * 0.3,
-      stars[i].r2 * 0.3,
+      stars[i].r1 * (random(0.1, 0.3)),
+      stars[i].r2 * (random(0.1, 0.3)),
       stars[i].n
     );
+    // stars.push(star);
   }
+  
 
   function Star(x, y, radius1, radius2, npoints) {
     let angle = TWO_PI / npoints;
@@ -125,7 +127,7 @@ function resetSketch() {
     for (let a = 0; a < TWO_PI; a += angle) {
       let sx = x + cos(a) * radius2;
       let sy = y + sin(a) * radius2;
-      vertex(random(0, 5) + sx, random(0, 5) + sy);
+      vertex(random(0, 3) + sx, random(0, 3) + sy);
       sx = x + cos(a + halfAngle) * radius1;
       sy = y + sin(a + halfAngle) * radius1;
       vertex(random(0, 5) + sx, random(0, 5) + sy);
