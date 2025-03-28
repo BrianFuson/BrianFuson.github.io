@@ -326,7 +326,7 @@ cursor: pointer;
 }
 
 .scroll {
-  animation: scroll 35s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 @keyframes scroll {
