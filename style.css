@@ -1,299 +1,306 @@
 @font-face{
-    font-family: myFont;
-    src:url(BookwellD27-Bold.woff);
-    font-style: normal;
-    font-weight: bold;  
+  font-family: myFont;
+  src:url(BookwellD27-Bold.woff);
+  font-style: normal;
+  font-weight: bold;  
 }
 
 @font-face{
-  font-family: myFontBook;
-  src:url(BookwellD27-Book.woff);
-  font-style: normal;
-  font-weight: normal;  
+font-family: myFontBook;
+src:url(BookwellD27-Book.woff);
+font-style: normal;
+font-weight: normal;  
 }
 
 @font-face{
-  font-family: myFontMedium;
-  src:url(BookwellD27-Medium.woff);
-  font-style: normal;
-  font-weight: medium;  
+font-family: myFontMedium;
+src:url(BookwellD27-Medium.woff);
+font-style: normal;
+font-weight: medium;  
 }
 
 body{
-    margin: 0px;
-    background-color: rgb(240,240,240);
-    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
+  margin: 0px;
+  background-color: rgb(240,240,240);
+  font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
 }
 
 main{
-    margin: 0px;
+  margin: 0px;
 }
 
 h1{
-    color: rgb(240,240,240);
-    background-color: black;
-    font-family: myFont, Georgia, 'Times New Roman', Times, serif;
-    font-size: 70px;
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  color: rgb(240,240,240);
+  background-color: black;
+  font-family: myFont, Georgia, 'Times New Roman', Times, serif;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 h1:hover{
-  color: rgb(240,240,240);
-  background-color: black;
+color: rgb(240,240,240);
+background-color: black;
 }
 
 h2{
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  font-family: myFont, Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-  padding-top: 10px;
-  margin: 30px;
-  line-height: 0px;
+text-decoration: none;
+text-align: center;
+color: black;
+font-family: myFont, Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;
+padding-top: 10px;
+margin: 30px;
+line-height: 0px;
 }
 
 
 hr{
-  margin-top: 0px;
-  margin-bottom: 40px;
+margin-top: 0px;
+margin-bottom: 40px;
 }
 
 
 .navbar ul{
-    list-style-type: none;
-    background-color: black;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    text-align: center;
+  list-style-type: none;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .navbar a{
-    color: rgb(240,240,240);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
-    padding: 10px 30px;
-    display: block;
+  color: rgb(240,240,240);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 30px;
+  display: block;
 }
 
 .navbar a:hover{
-    background-color:blue;
-    color: rgb(240,240,240);
-    transition: background-color .15s ease;
+  background-color:blue;
+  color: rgb(240,240,240);
+  transition: background-color .15s ease;
 }
 
 .navbar li{
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar {
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
 }
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color: rgb(240,240,240);
-  color: black;
+background-color: rgb(240,240,240);
+color: black;
 }
 
 h3{
-    text-align: center;
-    color: black;
-    font-family: myFont, Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    padding: 0px;
-    margin: 0p;
-    line-height: 0px;    
+  text-align: center;
+  color: black;
+  font-family: myFont, Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding: 0px;
+  margin: 0p;
+  line-height: 0px;    
 }
 
 p{
-    text-align: left;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 80ch;
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-
-hr {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
-a {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 80ch;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
+hr {
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+a {
+text-decoration: none;
+}
+
 .img {
-  display: block;
+display: block;
 }
 
 
 .column {
-    opacity: 1;
-    float: left;
-    width: 50%;
-    padding: 0px;
-    background-color: blue; /* Set background color */
-  }
-  
+  opacity: 1;
+  float: left;
+  width: 50%;
+  padding: 0px;
+  background-color: blue; /* Set background color */
+}
+
 .column img {
-    opacity: 1; /* Lower the opacity of just the image */
-    transition: opacity 0.2s ease;
-    display: block;
-  }
-  
+  opacity: 1; /* Lower the opacity of just the image */
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
 .column a:hover img {
-    opacity: .10; /* Restore full opacity on hover */
-    background-color: blue;
-  }
+  opacity: .10; /* Restore full opacity on hover */
+  background-color: blue;
+}
 
-  .column video {
-    opacity: 1; /* Lower the opacity of just the image */
-    transition: none;
-    display: block;
-  }
+.column video {
+  opacity: 1; /* Lower the opacity of just the image */
+  transition: none;
+  display: block;
+}
 
-  .column a:hover video{
-    opacity: .10; /* Restore full opacity on hover */
-    background-color: blue;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.column a:hover video{
+  opacity: .10; /* Restore full opacity on hover */
+  background-color: blue;
+}
 
-  .column2 {
-    float: left;
-    width: 33.3%;
-    padding: 0px;
-    display: block;
-  }
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  .column2 img {
-    display: block;
-  }
-  
-  /* Clear floats after image containers */
-  .row2::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.column2 {
+  float: left;
+  width: 33.3%;
+  padding: 0px;
+  display: block;
+}
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+.column2 img {
+  display: block;
+}
 
-  .center2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  .center3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .button {
-    background-color: black;
-    font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
-    border: none;
-    font-size: 18px;
-    padding: 15px 25px;
-    color: rgb(240,240,240);
-    display:block;
-    justify-content: center;
-    align-items: center;
-    margin:15px auto;
-  }
-
-  .button:hover{
-    background-color: blue;
-  }
-
-footer {
-    text-align: center;
-    position: sticky;
-    background-color: black;
-    color: rgb(240,240,240);
-    padding-bottom: 0px;
-    padding-top: 20px;
-    margin-top: 0px;
-    overflow: hidden;
-  }
-
-  @media screen and (max-width: 1100px){
-    .column, .singleimage, .column2{
-      width: 100%;
-    }
-    
-  }
-
-  div.cursors div {
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    background-color: none;
-    z-index: 999;
-    pointer-events: none;
-
-  }
-
-  div.cursors div span {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 450px;
-    line-height: 70px;
-    text-align: center;
-
-    font-size: 75px;
-    font-family: myFont, Georgia, 'Times New Roman', Times, serif;
-    color: rgb(240,240,240);
-  }
-
-  /* //////////////////// */
-
-  html, body {
-    padding: 0;
-  }
-  canvas {
-    display: block;
-    margin: 0 auto;
-    border: 10px solid black;
-  }
-
-#myButton {
   background-color: black;
-  text-decoration: none;
-  font-family: myFontbook, Georgia, 'Times New Roman', Times, serif;
+  font-family: myFontBook, Georgia, 'Times New Roman', Times, serif;
   border: none;
   font-size: 18px;
   padding: 15px 25px;
-  color: rgb(240, 240, 240);
-  display: block;
+  color: rgb(240,240,240);
+  display:block;
   justify-content: center;
   align-items: center;
-  margin: 15px auto;
+  margin:15px auto;
+}
+
+.button:hover{
+  background-color: blue;
   cursor: pointer;
 }
+
+footer {
+  text-align: center;
+  position: sticky;
+  background-color: black;
+  color: rgb(240,240,240);
+  padding-bottom: 0px;
+  padding-top: 20px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1100px){
+  .column, .singleimage, .column2{
+    width: 100%;
+  }
   
+}
+
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  background-color: none;
+  z-index: 999;
+  pointer-events: none;
+
+}
+
+div.cursors div span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 450px;
+  line-height: 70px;
+  text-align: center;
+
+  font-size: 75px;
+  font-family: myFont, Georgia, 'Times New Roman', Times, serif;
+  color: rgb(240,240,240);
+}
+
+/* /////////////////// */
+
+html, body {
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 10px solid black;
+}
+
+#myButton {
+background-color: black;
+text-decoration: none;
+font-family: myFontbook, Georgia, 'Times New Roman', Times, serif;
+border: none;
+font-size: 18px;
+padding: 15px 25px;
+color: rgb(240, 240, 240);
+display: block;
+justify-content: center;
+align-items: center;
+margin: 15px auto;
+cursor: pointer;
+}
+
+#myButton:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
