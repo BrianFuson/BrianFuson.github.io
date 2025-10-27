@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA_Compatable" content="IE=edge">
-    <meta name="viewport" content="with=device=width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Brian Fuson Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="FAVICON.png">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="FAVICON.png" />
+  </head>
 
-<body>
-  <a href="index.html">
-    <h1>Brian Fuson</h1>
-</a>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="morework.html">More Work</a></li>
-            <li><a href="about.html">About</a></li>
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/Fuson-Graphics-Logo.png" alt="Brian Fuson Logo" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Photography</a></li>
+          <li><a href="design.html">Portfolio</a></li>
+          <li><a href="morework.html">More Work</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+      </div>
     </nav>
 
-<main>
-    <h3>Avocado Chair</h3>
+    <main>
+      <h3>Avocado Chair</h3>
+      <div class="row">
+        <div class="column">
+          <img src="/images/CHAIR3.jpg" alt="Chair" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="/images/CHAIR2.png" alt="Chair" style="width: 100%" />
+        </div>
+      </div>
+      <hr color="black" size="3" />
+      <p>
+        In my graphic design 271 class we worked with a singular object the entire semester. I chose an avocado, and did explorations into form and history. The final in this class was to create something foreign to many of us second year graphic designers as we stuck to print for the majority of our projects thus far. Through my experiments, I landed on a chair. The reasoning behind this is that avocados are extremely nutritious and support us through vitamins C, E, K, and B6. My drafting
+        process was done entirely on a laser cutter using cardboard. I made several versions until I landed on a final design. The chair consists of four pieces that when placed together, all line up like putting together slices from an avocado. The final chair was cut out of pine ply wood using a CNC machine, stained walnut, and upholstered with a handmade cushion.
+      </p>
+    </main>
+
+    <img src="/images/CHAIR1.jpg" alt="Chair" class="center" style="width: 100%" />
     <div class="row">
       <div class="column">
-    <img src="/images/CHAIR3.jpg" alt="Chair" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/images/CHAIR2.png" alt="Chair" style="width:100%">
-  </div>
-</div>
-<hr color="black" size="3"> 
-    <p>In my graphic design 271 class we worked with a singular object the entire semester. I chose an avocado, and did explorations into form and history.  The final in this class was to create something foreign to many of us second year graphic designers as we stuck to print for the majority of our projects thus far. Through my experiments, I landed on a chair. The reasoning behind this is that avocados are extremely nutritious and support us through vitamins C, E, K, and B6. My drafting process was done entirely on a laser cutter using cardboard. I made several versions until I landed on a final design. The chair consists of four pieces that when placed together, all line up like putting together slices from an avocado. The final chair was cut out of pine ply wood using a CNC machine, stained walnut, and upholstered with a handmade cushion.</p>
-</main>
+        <video controls autoplay muted loop src="/images/Chair Vid 1.mp4" alt="Billy Joel Junior Visualizer" style="width: 100%"></video>
+      </div>
+      <div class="column">
+        <video controls autoplay muted loop src="/images/Chair Vid 2.mp4" alt="Heavy Metal Fusion" style="width: 100%"></video>
+      </div>
+    </div>
+    <img src="/images/Chair Diagram.jpg" alt="Chair" style="width: 100%" />
+  </body>
 
-<img src="/images/CHAIR1.jpg" alt="Chair" class="center" style="width: 100%;">
-<div class="row">
-  <div class="column">
-    <video controls autoplay muted loop src="/images/Chair Vid 1.mp4" alt="Billy Joel Junior Visualizer" style="width:100%"></video>
-  </div>
-  <div class="column">
-    <video controls autoplay muted loop src="/images/Chair Vid 2.mp4" alt="Heavy Metal Fusion" style="width:100%"></video>
-  </div>
-</div>
-<img src="/images/Chair Diagram.jpg" alt="Chair" style="width:100%">
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <a href="mailto:bfusion1234@gmail.com">bfusion1234@gmail.com</a>
+      </div>
 
-</body>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/brian_fusion/" target="_blank" rel="noopener">Instagram</a>
+        <span class="divider">|</span>
+        <a href="https://www.linkedin.com/in/brian-fuson-928b21210/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="divider">|</span>
+        <a href="https://www.tiktok.com/@brianfusion?lang=en" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</html>
+
 
 <footer>
     <p>This portfolio website is coded in HTML, CSS, and JavaScript by Brian Fuson.</p>
