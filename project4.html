@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA_Compatable" content="IE=edge">
-    <meta name="viewport" content="with=device=width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Brian Fuson Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="FAVICON.png">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="FAVICON.png" />
+  </head>
 
-<body>
-  <a href="index.html">
-    <h1>Brian Fuson</h1>
-</a>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="morework.html">More Work</a></li>
-            <li><a href="about.html">About</a></li>
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/Fuson-Graphics-Logo.png" alt="Brian Fuson Logo" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Photography</a></li>
+          <li><a href="design.html">Portfolio</a></li>
+          <li><a href="morework.html">More Work</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+      </div>
     </nav>
 
-<main>
-    <h3>TNF Design Competition</h3>
+    <main>
+      <h3>TNF Design Competition</h3>
+      <div class="row">
+        <div class="column">
+          <img src="/images/TNF1.jpg" alt="Prizes" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="/images/TNF3.jpg" alt="The North Face Design" style="width: 100%" />
+        </div>
+      </div>
+    </main>
+
+    <hr color="black" size="3" />
+    <p>
+      One day, while scrolling Tiktok, I saw a design contest for The North Face. I knew I had to submit. I ended up with a scene of the dome rock in Yosemite park that The North Face logo is based on. The copy on the shirt combines their mantra and their brand name in a font I created based on street signs in my home town (I think I'm calling it Okay Oaky). A month or so later, they reached out to me informing me that my design was selected. This shirt will be released in their upcoming season.
+      I received $1,500 in prizes as an award!
+    </p>
+    <p>My University even caught wind of this project and wrote a little article about me! Click the button to read about it!</p>
+    <a href="https://archdesign.utk.edu/senior-launches-revival-type-in-winning-design-for-the-north-face/" target="_blank">
+      <button class="button">Article By UTK A+A</button>
+    </a>
+
+    <img src="/images/TNF2.jpg" alt="The North Face Shirt" class="center" style="width: 100%" />
+
     <div class="row">
       <div class="column">
-    <img src="/images/TNF1.jpg" alt="Prizes" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/images/TNF3.jpg" alt="The North Face Design" style="width:100%">
-  </div>
-</div>
-  </main>
-
-<hr color="black" size="3"> 
-<p>One day, while scrolling Tiktok, I saw a design contest for The North Face. I knew I had to submit. I ended up with a scene of the dome rock in Yosemite park that The North Face logo is based on. The copy on the shirt combines their mantra and their brand name in a font I created based on street signs in my home town (I think I'm calling it Okay Oaky). A month or so later, they reached out to me informing me that my design was selected. This shirt will be released in their upcoming season. I received $1,500 in prizes as an award!</p>
-<p>My University even caught wind of this project and wrote a little article about me! Click the button to read about it!</p>
-<a href="https://archdesign.utk.edu/senior-launches-revival-type-in-winning-design-for-the-north-face/" target="_blank">
-  <button class="button">Article By UTK A+A</button>
-</a> 
-
-
-<img src="/images/TNF2.jpg" alt="The North Face Shirt" class="center" style="width: 100%;">
-
-
-  <div class="row">
-    <div class="column">
-      <video controls autoplay muted loop src="/images/TNF TikTik Web.mp4" alt="Billy Joel Junior Visualizer" style="width:100%"></video>
+        <video controls autoplay muted loop src="/images/TNF TikTik Web.mp4" alt="Billy Joel Junior Visualizer" style="width: 100%"></video>
+      </div>
+      <div class="column">
+        <video controls autoplay muted loop src="/images/TNF TikTok2 Web.mp4" alt="Heavy Metal Fusion" style="width: 100%"></video>
+      </div>
     </div>
-    <div class="column">
-      <video controls autoplay muted loop src="/images/TNF TikTok2 Web.mp4" alt="Heavy Metal Fusion" style="width:100%"></video>
+  </body>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <a href="mailto:bfusion1234@gmail.com">bfusion1234@gmail.com</a>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://www.instagram.com/brian_fusion/" target="_blank" rel="noopener">Instagram</a>
+        <span class="divider">|</span>
+        <a href="https://www.linkedin.com/in/brian-fuson-928b21210/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="divider">|</span>
+        <a href="https://www.tiktok.com/@brianfusion?lang=en" target="_blank" rel="noopener">TikTok</a>
+      </div>
     </div>
-  </div>
-
-
-
-</body>
+  </footer>
+</html>
 
 <footer>
     <p>This portfolio website is coded in HTML, CSS, and JavaScript by Brian Fuson.</p>
