@@ -1,123 +1,440 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA_Compatable" content="IE=edge">
-    <meta name="viewport" content="with=device=width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Brian Fuson Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="FAVICON.png">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="FAVICON.png" />
+  </head>
 
-<body>
-    <a href="index.html">
-    <h1>Brian Fuson</h1>
-</a>
-
+  <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="morework.html">More Work</a></li>
-            <li><a href="about.html">About</a></li>
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/Fuson-Graphics-Logo.png" alt="Brian Fuson Logo" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Photography</a></li>
+          <li><a href="design.html">Portfolio</a></li>
+          <li><a href="morework.html">More Work</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+      </div>
     </nav>
 
-<main>
-    <h3>Portfolio</h3>
-</main>
-
-<a>
-    <hr color="black" size="3"> 
-    <div class="marquee">
-     <div class="marquee-content scroll">
-         <div class="textScroll">Type Design / / / Illustration / / / Photography / / / Motion Design / / / UI / / / UX  / / / Coding / / / Brand Design / / / Wayfinding / / / Book Design / / / Apparel / / /</div>
-        </div>
-        <div class="marquee-content scroll">
-            <div class="textScroll">Type Design / / / Illustration / / / Photography / / / Motion Design / / / UI / / / UX  / / / Coding / / / Brand Design / / / Wayfinding / / / Book Design / / / Apparel / / /</div>
-        </div>
+    <!-- Loader -->
+    <div id="loader">
+      <img src="images/loader.gif" alt="Loading..." />
     </div>
-    <hr color="black" size="3"> 
-</a>
 
+    <main>
+      <div id="gallery" class="masonry"></div>
+    </main>
+  </body>
 
-<div class="row">
-    <a href="project7.html">
-        <div class="column">
-          <img src="/images/FT 1.jpg" alt="Fusion Type" style="width:100%" data-hover="Fusion<br />Type">
-          <a>
-        </div>
-    <a href="project4.html">
-        <div class="column">
-            <img src="/images/TNF2.jpg" alt="The North Face" style="width:100%" data-hover="The<br />North<br />Face">
-            <a>
-        </div>
-        <a href="project12.html">
-            <div class="column">
-              <img src="/images/Spec Zine Cover.jpg" style="width:100%" data-hover="Specimen<br />Zine">
-              <a>
-            </div>
-    <a href="project13.html">
-         <div class="column">
-             <img src="/images/TOD Cover.jpg" alt="Type One Digest" style="width:100%" data-hover="Type One<br />Digest">
-        <a>
-        </div>
-            <!-- <a href="#">
-                <div class="column">
-                  <img src="/images/Blank.jpg" style="width:100%" data-hover="Capstone">
-                  <a>
-                </div> -->
-    <a href="project1.html">
-        <div class="column">
-      <img src="/images/BPOS1.jpg" alt="Book Cover" style="width:100%" data-hover="UT<br />Press">
-      <a>
-    </div>
-    <a href="project3.html">
-        <div class="column">
-          <img src="/images/HB1.jpg" alt="Honey Bee Zoo Exhibit" style="width:100%" data-hover="Honey<br />Bee<br />Zoo<br />Exhibit">
-          <a>
-        </div>
-        <a href="project10.html">
-            <div class="column">
-                <img src="/images/Zoe Cover.jpg" alt="Zoetrope Project" style="width:100%" data-hover="Cat<br />Zoetrope">
-                <a>
-            </div>
-            <a href="project6.html">
-                <div class="column">
-                    <img src="/images/BO11.jpg" alt="Blue Opossum Brand Design" style="width:100%" data-hover="The<br />Blue<br />Opossum">
-                    <a>
-                </div>
-    <a href="project2.html">
-    <div class="column">
-      <img src="/images/CHAIR1.jpg" alt="Chair" style="width:100%" data-hover="Avocado<br />Chair">
-      <a>
-    </div>
-    <a href="project11.html">
-    <div class="column">
-        <img src="/images/USF Cover.jpg" alt="Flag" style="width:100%" data-hover="American<br />Flag">
-        <a>
+  <!-- <footer>
+    <p>This portfolio website is coded in HTML, CSS, and JavaScript by Brian Fuson.</p>
+  </footer> -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <a href="mailto:bfusion1234@gmail.com">bfusion1234@gmail.com</a>
       </div>
-    <!-- <a href="project8.html">
-        <div class="column">
-            <img src="/images/GGG1.jpg" alt="Green Grass Global" style="width:100%" data-hover="Green<br />Grass<br />Global">
-            <a>
-        </div> 
-            <a href="project5.html">
-    <div class="column">
-        <img src="/images/MMWLCOVER.jpg" alt="Monsters Made With Love Branding" style="width:100%" data-hover="Monsters<br />Made<br />With<br />Love">
-        <a>
-    </div> -->
+
+      <div class="footer-right">
+        <a href="https://www.instagram.com/brian_fusion/" target="_blank" rel="noopener">Instagram</a>
+        <span class="divider">|</span>
+        <a href="https://www.linkedin.com/in/brian-fuson-928b21210/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="divider">|</span>
+        <a href="https://www.tiktok.com/@brianfusion?lang=en" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursors">
+    <div>
+      <span> </span>
+    </div>
   </div>
 
-</body>
+  <script src="cursors.js"></script>
 
-<footer>
-    <p>This portfolio website is coded in HTML, CSS, and JavaScript by Brian Fuson.</p>
-</footer>
+  <!-- Masonry Gallery Script -->
+  <!-- <script>
+    // Folder containing your photos
+    const imageFolder = "img/";
+    // Add image file names here
+    const imageFiles = [
+      "FGP01.jpg",
+      "FGP02.jpg",
+      "FGP03.jpg",
+      "FGP04.jpg",
+      "FGP05.jpg",
+      "FGP06.jpg",
+      "FGP07.jpg",
+      "FGP08.jpg",
+      "FGP09.jpg",
+      "FGP10.jpg",
+      "FGP11.jpg",
+      "FGP12.jpg",
+      "FGP13.jpg",
+      "FGP14.jpg",
+      "FGP15.jpg",
+      "FGP16.jpg",
+      "FGP17.jpg",
+      "FGP18.jpg",
+      "FGP19.jpg",
+      "FGP20.jpg",
+      "FGP21.jpg",
+      "FGP22.jpg",
+      "FGP23.jpg",
+      "FGP24.jpg",
+      "FGP25.jpg",
+      "FGP26.jpg",
+      "FGP27.jpg",
+      "FGP28.jpg",
+      "FGP29.jpg",
+      "FGP30.jpg",
+      "FGP31.jpg",
+      "FGP32.jpg",
+      "FGP33.jpg",
+      "FGP34.jpg",
+      "FGP35.jpg",
+      "FGP36.jpg",
+      "FGP37.jpg",
+      "FGP38.jpg",
+      "FGP39.jpg",
+      "FGP40.jpg",
+      "FGP41.jpg",
+      "FGP42.jpg",
+      "FGP43.jpg",
+      "FGP44.jpg",
+      "FGP45.jpg",
+      "FGP46.jpg",
+      "FGP47.jpg",
+      "FGP48.jpg",
+      "FGP49.jpg",
+      "FGP50.jpg",
+      "FGP51.jpg",
+      "FGP52.jpg",
+      "FGP53.jpg",
+      "FGP54.jpg",
+      "FGP55.jpg",
+      "FGP56.jpg",
+      "FGP57.jpg",
+      "FGP58.jpg",
+      "FGP59.jpg",
+      "FGP60.jpg",
+      "FGP61.jpg",
+      "FGP62.jpg",
+      "FGP63.jpg",
+      "FGP64.jpg",
+      "FGP65.jpg",
+      "FGP66.jpg",
+      "FGP67.jpg",
+      "FGP68.jpg",
+      "FGP69.jpg",
+      "FGP70.jpg",
+      "FGP71.jpg",
+      "FGP72.jpg",
+      "FGP73.jpg",
+      "FGP74.jpg",
+      "FGP75.jpg",
+      "FGP76.jpg",
+      "FGP77.jpg",
+      "FGL01.jpg",
+      "FGL02.jpg",
+      "FGL03.jpg",
+      "FGL04.jpg",
+      "FGL05.jpg",
+      "FGL06.jpg",
+      "FGL07.jpg",
+      "FGL08.jpg",
+      "FGL09.jpg",
+      "FGL10.jpg",
+      "FGL11.jpg",
+      "FGL12.jpg",
+      "FGL13.jpg",
+      "FGL14.jpg",
+      "FGL15.jpg",
+      "FGL16.jpg",
+      "FGL17.jpg",
+      "FGL18.jpg",
+      "FGL19.jpg",
+      "FGL20.jpg",
+      "FGL21.jpg",
+      "FGL22.jpg",
+      "FGL23.jpg",
+      "FGL24.jpg",
+      "FGL25.jpg",
+      "FGL26.jpg",
+      "FGL27.jpg",
+      "FGL28.jpg",
+      "FGL29.jpg",
+      "FGL30.jpg",
+      "FGL31.jpg",
+      "FGL32.jpg",
+      "FGL33.jpg",
+      "FGL34.jpg",
+      "FGL35.jpg",
+      "FGL36.jpg",
+      "FGL37.jpg",
+      "FGL38.jpg",
+      "FGL39.jpg",
+      "FGL40.jpg",
+      "FGL41.jpg",
+      "FGL42.jpg",
+      "FGL43.jpg",
+      "FGL44.jpg",
+      "FGL45.jpg",
+      "FGL46.jpg",
+      "FGL47.jpg",
+      "FGL48.jpg",
+      "FGL49.jpg",
+      "FGL50.jpg",
+      "FGL51.jpg",
+      "FGL52.jpg",
+      "FGL53.jpg",
+      "FGL54.jpg",
+    ];
 
-<div class="cursors"> 
-    <div>
-        <span> </span>
-    </div>
-</div>
+    // Shuffle the image order
+    const shuffled = imageFiles.sort(() => 0.5 - Math.random());
 
-<script src="cursors.js"></script>
+    // Render gallery
+    const gallery = document.getElementById("gallery");
+    shuffled.forEach((file) => {
+      const img = document.createElement("img");
+      img.src = imageFolder + file;
+      img.loading = "lazy";
+      gallery.appendChild(img);
+    });
+  </script> -->
+
+  <style>
+    /* Fullscreen overlay */
+    #imageModal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #imageModal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); */
+    }
+
+    #closeModal {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+
+    #closeModal:hover {
+      color: blue;
+    }
+  </style>
+
+  <div id="imageModal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="Expanded image" />
+  </div>
+
+  <script>
+    const imageFolder = "images/Photos/";
+    const imageFiles = [
+      "FGP01.jpg",
+      "FGP02.jpg",
+      "FGP03.jpg",
+      "FGP04.jpg",
+      "FGP05.jpg",
+      "FGP06.jpg",
+      "FGP07.jpg",
+      "FGP08.jpg",
+      "FGP09.jpg",
+      "FGP10.jpg",
+      "FGP11.jpg",
+      "FGP12.jpg",
+      "FGP13.jpg",
+      "FGP14.jpg",
+      "FGP15.jpg",
+      "FGP16.jpg",
+      "FGP17.jpg",
+      "FGP18.jpg",
+      "FGP19.jpg",
+      "FGP20.jpg",
+      "FGP21.jpg",
+      "FGP22.jpg",
+      "FGP23.jpg",
+      "FGP24.jpg",
+      "FGP25.jpg",
+      "FGP26.jpg",
+      "FGP27.jpg",
+      "FGP28.jpg",
+      "FGP29.jpg",
+      "FGP30.jpg",
+      "FGP31.jpg",
+      "FGP32.jpg",
+      "FGP33.jpg",
+      "FGP34.jpg",
+      "FGP35.jpg",
+      "FGP36.jpg",
+      "FGP37.jpg",
+      "FGP38.jpg",
+      "FGP39.jpg",
+      "FGP40.jpg",
+      "FGP41.jpg",
+      "FGP42.jpg",
+      "FGP43.jpg",
+      "FGP44.jpg",
+      "FGP45.jpg",
+      "FGP46.jpg",
+      "FGP47.jpg",
+      "FGP48.jpg",
+      "FGP49.jpg",
+      "FGP50.jpg",
+      "FGP51.jpg",
+      "FGP52.jpg",
+      "FGP53.jpg",
+      "FGP54.jpg",
+      "FGP55.jpg",
+      "FGP56.jpg",
+      "FGP57.jpg",
+      "FGP58.jpg",
+      "FGP59.jpg",
+      "FGP60.jpg",
+      "FGP61.jpg",
+      "FGP62.jpg",
+      "FGP63.jpg",
+      "FGP64.jpg",
+      "FGP65.jpg",
+      "FGP66.jpg",
+      "FGP67.jpg",
+      "FGP68.jpg",
+      "FGP69.jpg",
+      "FGP70.jpg",
+      "FGP71.jpg",
+      "FGP72.jpg",
+      "FGP73.jpg",
+      "FGP74.jpg",
+      "FGP75.jpg",
+      "FGP76.jpg",
+      "FGP77.jpg",
+      "FGL01.jpg",
+      "FGL02.jpg",
+      "FGL03.jpg",
+      "FGL04.jpg",
+      "FGL05.jpg",
+      "FGL06.jpg",
+      "FGL07.jpg",
+      "FGL08.jpg",
+      "FGL09.jpg",
+      "FGL10.jpg",
+      "FGL11.jpg",
+      "FGL12.jpg",
+      "FGL13.jpg",
+      "FGL14.jpg",
+      "FGL15.jpg",
+      "FGL16.jpg",
+      "FGL17.jpg",
+      "FGL18.jpg",
+      "FGL19.jpg",
+      "FGL20.jpg",
+      "FGL21.jpg",
+      "FGL22.jpg",
+      "FGL23.jpg",
+      "FGL24.jpg",
+      "FGL25.jpg",
+      "FGL26.jpg",
+      "FGL27.jpg",
+      "FGL28.jpg",
+      "FGL29.jpg",
+      "FGL30.jpg",
+      "FGL31.jpg",
+      "FGL32.jpg",
+      "FGL33.jpg",
+      "FGL34.jpg",
+      "FGL35.jpg",
+      "FGL36.jpg",
+      "FGL37.jpg",
+      "FGL38.jpg",
+      "FGL39.jpg",
+      "FGL40.jpg",
+      "FGL41.jpg",
+      "FGL42.jpg",
+      "FGL43.jpg",
+      "FGL44.jpg",
+      "FGL45.jpg",
+      "FGL46.jpg",
+      "FGL47.jpg",
+      "FGL48.jpg",
+      "FGL49.jpg",
+      "FGL50.jpg",
+      "FGL51.jpg",
+      "FGL52.jpg",
+      "FGL53.jpg",
+      "FGL54.jpg",
+    ];
+
+    const gallery = document.getElementById("gallery");
+    const loader = document.getElementById("loader");
+
+    const shuffled = imageFiles.sort(() => 0.5 - Math.random());
+    let loadedCount = 0;
+
+    shuffled.forEach((file) => {
+      const img = document.createElement("img");
+      img.src = imageFolder + file;
+      img.loading = "lazy";
+
+      img.addEventListener("load", () => {
+        loadedCount++;
+        if (loadedCount === shuffled.length) {
+          loader.classList.add("hidden");
+        }
+      });
+
+      // When image is clicked — open modal
+      img.addEventListener("click", () => {
+        modalImage.src = img.src;
+        imageModal.style.display = "flex";
+      });
+
+      gallery.appendChild(img);
+    });
+
+    // Modal close logic
+    const imageModal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const closeModal = document.getElementById("closeModal");
+
+    closeModal.addEventListener("click", () => {
+      imageModal.style.display = "none";
+    });
+
+    // Optional: close modal when clicking outside image
+    imageModal.addEventListener("click", (e) => {
+      if (e.target === imageModal) {
+        imageModal.style.display = "none";
+      }
+    });
+  </script>
+</html>
+
